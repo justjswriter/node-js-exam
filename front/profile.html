@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:8080/profile.css">
+    <link rel="stylesheet" href="http://localhost:8080/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav_bar">
+                <li><a href="./feed.html">Лента</a></li>
+                <li><a href="./profile.html">Профиль</a></li>
+                <li><a href="./users.html">Список пользователей</a></li>
+            </ul>
+        </nav>
+        <button id="create_post_open_modal">Create Post</button>
+        <button id="LogOut_btn" onclick="logOut()">Выйти</button>
+    </header>
+    <main>
+        <!-- Модалка создания поста -->
+        <div id="modal1">
+            <div id="create_post_modal">
+                <p class="modal_header">Создать пост</p>
+                <label for="create_post_header">Название поста</label>
+                <input type="text" name="" id="create_post_header">
+                <label for="create_post_data">текст поста</label>
+                <textarea name="" id="create_post_data" cols="30" rows="10"></textarea>
+                <button id="create_post_btn">Создать</button>
+                <button id="close_modal_create_post">Отмена</button>
+            </div>
+        </div>
+        <!-- модалка обновления поста -->
+        <div id="modal2">
+            <div id="update_post_modal">
+        </div>
+        <!-- модалка изменения пользователя -->
+
+        </div>
+        <div id="modal3">
+            <div class="profile_info_block">
+                <p class="modal_header">Редактировать Профиль</p>
+                <input type="text" name="" id="author_fullName">
+                <textarea name="" id="author_about_field" cols="30" rows="10"></textarea>
+                <div class="ul" id="followed_author_list"></div>
+                <button id="update_profile_info">Обновить</button>
+                <button id="closeUpdateUserModal">Отмена</button>
+            </div>
+        </div>
+        <div class="user_info_block">
+            <div class="user_info">
+                <div class="user_logo">
+                    <img src="http://localhost:8080/userIcon.png" alt="">
+                </div>
+                <div class="user_info_text">
+                    <p id="author_fullName_info"></p>
+                    <p id="author_about_field_info"></p>
+                    <button id="change_author_info_btn">Редактировать профиль</button>
+                </div>
+            </div>
+        </div>
+
+        <p></p>
+
+        <div class="author_posts_block">
+    
+        </div>
+    </main>
+    <script src="./scripts/profileScript.js"></script>
+</body>
+</html>
+

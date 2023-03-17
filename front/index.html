@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:8080/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>registration</title>
+</head>
+<body>
+    <div id="reg_form">
+        <div class="registration_form">
+            <p class="form_header">Registration</p>
+            <label class="input_info" for="reg_full_name">Full name</label>
+            <input type="text" id="reg_full_name">
+            <label class="input_info" for="reg_login">Email</label>
+            <input type="email" name="login" id="reg_login">
+            <label class="input_info" for="reg_password">password</label>
+            <input type="password" name="passwrod" id="reg_password">
+            <button id="reg_user_btn">Register</button>
+            <button class="change_form" onclick="changeWindow(registrationForm,loginForm)">Log-in</button>
+        </div>
+        <div class="login_form">
+            <p class="form_header">Login</p>
+            <label class="input_info" for="log_login">Email</label>
+            <input type="email" name="login" id="log_login">
+            <label class="input_info" for="log_password">password</label>
+            <input type="password" name="passwrod" id="log_password">
+            <button id="log_user_btn">Log-in</button>
+            <button class="change_form" onclick="changeWindow(loginForm, registrationForm)">Registration</button>
+        </div>
+    </div>
+    <script src="./scripts/authScript.js"></script>
+</body>
+</html>

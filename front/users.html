@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:8080/users.css">
+    <link rel="stylesheet" href="http://localhost:8080/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Users</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav_bar">
+                <li><a href="./feed.html">Лента</a></li>
+                <li><a href="./profile.html">Профиль</a></li>
+                <li><a href="./users.html">Список пользователей</a></li>
+            </ul>
+        </nav>
+        <button id="LogOut_btn" onclick="logOut()">Выйти</button>
+    </header>
+    <main>
+        <div class="users_list">
+        </div>       
+    </main>
+    <script src="./scripts/usersScrypt.js"></script>
+</body>
+</html>
